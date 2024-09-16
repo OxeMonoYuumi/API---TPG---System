@@ -1,0 +1,18 @@
+{
+  "name": "api_habilidades_pi",
+  "version": "1.0.0",
+  "description": "Relação de Habilidades do Currículo Paulista, referente ao Componente ARTE, dos Segmentos do Ensino Fundamental Anos Iniciais e Ensino Fundamental Anos Finais.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "author": "Satyro, G. S.; Veiga, P. X.; Silva, R. P.",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1",
+    "nodemon": "^3.1.4"
+  }
+}
