@@ -29,7 +29,7 @@ class skillService {
     }
 
     //Método para deletar uma Habilidade
-    async Deleted(id) {
+    async Delete(id) {
         try {
             await Skill.findByIdAndDelete(id);
             console.log(`Habilidade com id: ${id} foi deletada com sucesso.`);
