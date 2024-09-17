@@ -41,7 +41,7 @@ class skillService {
     //Método para alterar uma Habilidade
     async Update(id, component, year_range, skill, comment, skill_code) {
         try {
-            await Skill.finsByIdAndUpdate(id, {
+            await Skill.findByIdAndUpdate(id, {
                 component,
                 year_range,
                 skill,
@@ -57,7 +57,7 @@ class skillService {
     //Método para listar uma única Habilidade
     async getOne(id) {
         try {
-            const skill = await Skill.finsOne({_id: id})
+            const skill = await Skill.findOne({_id: id})
             return skill
         } catch (error) {
             console.log(error)
